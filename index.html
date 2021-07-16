@@ -6,6 +6,7 @@
     <title>consulta firebase</title>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,39 @@
     firebase.initializeApp(config);
     var firestore = firebase.firestore();
 
+    var base_provider = new Firebase.auth.GoogleAuthProvider();
 
+    base_provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+    base_provider.setCustomParameters({
+      'login_hint': 'user@example.com'
+    });
+
+    firebase.auth()
+      .signInWithPopup(base_provider)
+      .then((result) => {
+        /** @type {firebase.auth.OAuthCredential} */
+        var credential = result.credential;
+
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+      });
 
 
     googleSignIn = () => {
-        base_provider = new Firebase.auth.GoogleAuthProvider()
+        
         firebase.auth().signWithPopup(base_provider).then(function (result) {
             console.log(result);
             console.log("Sucesso..conta Google logada");

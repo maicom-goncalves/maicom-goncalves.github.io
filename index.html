@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Login Google</title>
-	<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <meta charset="utf-8">
+    <title>consulta firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
 </head>
+
 <body>
-<script src="exemplo-login2.js"></script>
+    <button onclick="googleSignIn()">
+        <b>LOGAR</b>
+    </button>
 </body>
+<script src="firebase/init.js"></script>
+<script>
+    firebase.auth().languageCode = 'javascript';
+    var config = {
+        apiKey: "AIzaSyCLVtq2sOSkZNNrXGzluMkCDJCUvpJS2b8",
+        authDomain: "delivery-muito.firebaseapp.com",
+        projectId: "delivery-muito",
+        storageBucket: "delivery-muito.appspot.com",
+        messagingSenderId: "745164617711",
+        appId: "1:745164617711:web:f67b5c512f482982dea81a",
+        measurementId: "G-TKR1RPT8Q7"
+    }
+
+    firebase.initializeApp(config);
+    var firestore = firebase.firestore();
+
+
+
+
+    googleSignIn = () => {
+        base_provider = new Firebase.auth.GoogleAuthProvider()
+        firebase.auth().signWithPopup(base_provider).then(function (result) {
+            console.log(result);
+            console.log("Sucesso..conta Google logada");
+        }).catch(function (err) {
+            console.log(err);
+            console.log("Falhou essa bagaça");
+        })
+       
+    }
+</script>
+
 </html>

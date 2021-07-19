@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,13 +17,9 @@
       <div id="userDetails"></div>
       <button id="logout">Logout</button>
     </div>
-
-    
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-
- 
     <script>
       
       var firebaseConfig = {
@@ -54,7 +50,20 @@
           showUserDetails(res.user)
         }).catch(e=>{
           console.log(e)
-        })
+        });
+        firebase.auth().signInWithRedirect(provider);
+       /* firebase.auth().signInWithRedirect(provider);
+        firebase.auth().getRedirectResult().then(result => {
+            if (result.credential) {
+                const token = result.credential.accessToken;
+            }
+            const user = result.user;
+        }).catch(error => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              const email = error.email;
+              const credential = error.credential;
+          });*/
       }
 
       function showUserDetails(user){

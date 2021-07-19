@@ -51,8 +51,9 @@
         }).catch(e=>{
           console.log(e)
         });
-        firebase.auth().signInWithRedirect(provider);
-       /* firebase.auth().signInWithRedirect(provider);
+
+        //firebase.auth().signInWithRedirect(provider);
+       firebase.auth().signInWithRedirect(provider);
         firebase.auth().getRedirectResult().then(result => {
             if (result.credential) {
                 const token = result.credential.accessToken;
@@ -63,7 +64,7 @@
               const errorMessage = error.message;
               const email = error.email;
               const credential = error.credential;
-          });*/
+          });
       }
 
       function showUserDetails(user){

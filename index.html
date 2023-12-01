@@ -1,102 +1,257 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
+<html>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase Autenticação</title>
-  </head>
-  <body>
-    <h1>Logar com Google</h1>
-    <p>___________________</p>
+    <title>Maicom G. Soares</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
-    <div id="LoginScreen">
-      <button id="login">Logar com Google</button>
-    </div>
+</head>
 
-    <div id="dashboard">
-      <div id="userDetails"></div>
-      <button id="logout">Logout</button>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<body>
+    <script src="portfolio.js"></script>
+    <div class="tudo">
+        <div class="banner">
+            <h1 class="nome">MAICOM G. SOARES </h1>
+            <p class="borda"></p>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color:#21A0A0">
 
-    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-    <script>
-      
-      var firebaseConfig = {
-        apiKey: "AIzaSyCLVtq2sOSkZNNrXGzluMkCDJCUvpJS2b8",
-        authDomain: "delivery-muito.firebaseapp.com",
-        projectId: "delivery-muito",
-        storageBucket: "delivery-muito.appspot.com",
-        messagingSenderId: "745164617711",
-        appId: "1:745164617711:web:f67b5c512f482982dea81a",
-        measurementId: "G-TKR1RPT8Q7"
-      };
-     
-      firebase.initializeApp(firebaseConfig);
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      document.getElementById('dashboard').style.display="none"
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav">
 
-      document.getElementById('login').addEventListener('click', GoogleLogin)
-      document.getElementById('logout').addEventListener('click', LogoutUser)
+                </ul>
+                <ul class="navbar-nav nav-underline">
+                    <li>
+                        <a href="#sobre-mim" class="nav-link active" style=color:white><b>SOBRE MIM</b></a>
+                    </li>
+                    <li>
+                        <a href="#projetos" class="nav-link" style=color:white><b>PROJETOS</b></a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="nav-link" style=color:white><b>CONTATO</b></a>
+                    </li>
+                </ul>
 
-      let provider = new firebase.auth.GoogleAuthProvider()
+            </div>
+        </nav>
+        <section id="sobre-mim">
+            <div class="sobremim">
+                <h2>Sobre mim</h2>
+                <span>
+                    <img class="foto" src="./img/maicom.jpg" />
+                </span>
+                <p class="justificado">
 
-      function GoogleLogin(){
-        console.log('Login Btn Call')
-        firebase.auth().signInWithPopup(provider).then(res=>{
-          console.log(res.user)
-          document.getElementById('LoginScreen').style.display="none"
-          document.getElementById('dashboard').style.display="block"
-          showUserDetails(res.user)
-        }).catch(e=>{
-          console.log(e)
-        });
+                    Estudante de tecnologia em sistemas para internet no Instituto Federal de Mato Grosso do Sul campus
+                    Aquidauana
+                    tenho afinidade em criar design de sites web e atender a responsividade de dispositivos
+                    moveis gosto de pensar nos
+                    detalhes nas cores para que o resultado seja agradável e harmonioso ,
+                    participei de varias competições internas e com
+                    outros campus do instituto federal na área de algoritimos e hackatons .
+                </p>
+                <div class="icones">
+                    <a href="https://www.linkedin.com/in/maicom-gon%C3%A7alves-soares-8a4311141/" target="_blank">
+                        <img src="./img/linkedin.png" class="icone" alt="linkdin-maicom">
+                    </a>
+                    <a href="https://github.com/maicom-goncalves" target="_blank">
+                        <img src="./img/github.png" class="icone" alt="github-maicom">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div id="projetos">
+            <h2><b>PROJETOS</b></h2>
+            <div>
+                <div class="projetos">
+                    <h3><b>TV-SHOW</b></h3>
+                    <div class="projeto">
 
-        //firebase.auth().signInWithRedirect(provider);
-       firebase.auth().signInWithRedirect(provider);
-        firebase.auth().getRedirectResult().then(result => {
-            if (result.credential) {
-                const token = result.credential.accessToken;
-            }
-            const user = result.user;
-        }).catch(error => {
-              const errorCode = error.code;
-              const errorMessage = error.message;
-              const email = error.email;
-              const credential = error.credential;
-          });
-      }
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/tvshow.png" class="img-fluid d-block w-100" alt="tvshow1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/tvshow2.png" class="img-fluid d-block w-100" alt="tvshow2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/tvshow3.png" class="img-fluid d-block w-100" alt="tvshow3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <p class="textoprojeto">
+                            Este projeto se trata de um buscador de series com uma
+                            api fornecida gratuitamente.
+                            para consumir essa api usei HTML ,CSS JavaScript e React js
+                        </p>
+                        <div class="icones">
+                            <img src="./img/html.png" class="icone" alt="html-icon">
+                            <img src="./img/css.png" class="icone" alt="css-icon">
+                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                            <img src="./img/react.png" class="icone" alt="react-icon">
+                        </div>
+                        <br />
+                        <p>
+                            <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
+                                target="_blank">
+                                <b>link do repositorio git hub</b>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://tvsearch-4d4d8.web.app/" target="_blank"><b>link do projeto</b></a>
+                        </p>
+                    </div>
+                </div>
 
-      function showUserDetails(user){
-        document.getElementById('userDetails').innerHTML = `
-          <img src="${user.photoURL}" style="width:10%">
-          <p>Name: ${user.displayName}</p>
-          <p>Email: ${user.email}</p>
-        `
-      }
+                <br />
+                <br />
+                <div class="projetos">
+                    <h3><b>BUSCADOR ARTIGOS WIKIPEDIA</b></h3>
+                    <div class="projeto">
 
-      function checkAuthState(){
-        firebase.auth().onAuthStateChanged(user=>{
-          if(user){
-            document.getElementById('LoginScreen').style.display="none"
-            document.getElementById('dashboard').style.display="block"
-            showUserDetails(user)
-          }else{
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/wiki.png" class="d-block w-100" alt="wiki-projeto1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/wiki2.png" class="d-block w-100" alt="wiki-projeto2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/wiki3.png" class="d-block w-100" alt="wiki-projeto3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-          }
-        })
-      }
+                    <div class="texto">
+                        <p class="textoprojeto">
+                            Este projeto se trata de um buscador da sinpse de arquivos do
+                            wikipedia com a api deles fornecida gratuitamente.
 
-      function LogoutUser(){
-        console.log('Logout Btn Call')
-        firebase.auth().signOut().then(()=>{
-          document.getElementById('LoginScreen').style.display="block"
-          document.getElementById('dashboard').style.display="none"
-        }).catch(e=>{
-          console.log(e)
-        })
-      }
-      checkAuthState()
-    </script>
-  </body>
+                        </p>
+                        <div class="icones">
+                            <img src="./img/html.png" class="icone" alt="html-icon">
+                            <img src="./img/css.png" class="icone" alt="css-icon">
+                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                            <img src="./img/react.png" class="icone" alt="react-icon">
+                        </div>
+                        <span>
+                            <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
+                                target="_blank">
+                                <b>link do repositorio</b>
+                            </a>
+                        </span>
+                        <br />
+                        <span>
+                            <a href="https://procurando-artigos.web.app/" target="_blank"><b>BUSCADOR WIKIPEDIA</b></a>
+                        </span>
+                    </div>
+                </div>
+                <br />
+                <div class="projetos">
+                    <h3><b>BUSCA ANIME</b></h3>
+                    <div class="projeto">
+
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/animeone.png" class="img-fluid d-block w-100" alt="animeone1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/animeone2.png" class="img-fluid d-block w-100" alt="animeone2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <p class="textoprojeto">
+                            Projeto de um buscador de anime por nome ou parte do
+                            nome uso a api da jikan fornecida gratuitamente para projetos
+                        </p>
+                        <div class="icones">
+                            <img src="./img/html.png" class="icone" alt="html-icon">
+                            <img src="./img/css.png" class="icone" alt="css-icon">
+                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                            <img src="./img/react.png" class="icone" alt="react-icon">
+                        </div>
+                        <br />
+                        <p>
+                            <a href="https://github.com/maicom-goncalves/react/tree/master/AnimeApp-main"
+                                target="_blank">
+                                <b>link do repositorio git hub</b>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://pesquisa-anime.web.app/" target="_blank"><b>link do projeto</b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer id="contato">
+            <p>contatos</p>
+            <div class="icones">
+                <img src="./img/linkedin.png" class="icone" alt="linkdin-maicom">
+                <img src="./img/github.png" class="icone" alt="github-maicom">
+            </div>
+        </footer>
+</body>
+
 </html>

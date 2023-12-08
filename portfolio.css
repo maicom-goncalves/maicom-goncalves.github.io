@@ -3,43 +3,82 @@
 
 body {
 	padding: 1% 12%;
-	/*background-image: url("paper.gif");*/
-}
-a {
-	color: #21a07a;
+	background-image: url("./img/wood2.jpg");
 }
 
 .tudo {
 	padding: 0;
 	background-color: #F5F5DC;
+	/*border: 6px solid whitesmoke;*/
 	box-shadow: 8px 3px 5px black,
 		-1px -2px 5px gray;
 
 }
 
 .nome {
-	color: #F6F8FF;
+	color: #FFEECF;
+	border-color: #302c2c 2px;
 	font-family: 'Abril Fatface', serif;
+	text-shadow: 3px 3px black;
+	font-size: 5.5vh;
+	padding-left: 3%;
+	padding-bottom: 1%;
 }
-.collapse{
+.titulo{
+	text-shadow: 2px 3px  black;
+}
+.collapse {
 	padding-left: 3%;
 }
+
 .sobremim {
-	background-color: #F6F8FF;
+	background-color: #E15554;
 	padding: 4%;
 	font-family: 'DM Serif Display', serif;
+	color: #F5F5DC;
 }
+.sobremim h2{
+	color: #F2CD60;
+}
+.linke{
+	text-decoration: none;
+	color: #F6F8FF;
+}
+.linke:hover{
+	color: #252525;
+	box-shadow: 1px black;
+}
+#habilidades{
+	background-color: #F2CD60;
+	padding: 3%;
+}
+
 .foto {
 	margin-top: auto;
 	width: 19%;
-	height: auto;
-	padding: 1%;
+	height: 21%;
+	padding: 0%;
 	border-radius: 50%;
 	text-align: left;
+	border: 6px solid #333333;
 }
+
 .banner {
 	padding: 1%;
-	background-color: #21A0A0;
+	background-color:#54a19e;
+}
+
+.mudar {
+	display: inline-block;
+	height: 100%;
+	width:auto;
+	margin: 0;
+	color: #ffff00;
+}
+
+.mudar:hover {
+	
+	color: #302c2c;
 }
 
 .menu {
@@ -47,14 +86,19 @@ a {
 }
 
 #projetos {
-	background-color: #e2856ed5;
+	background-color: #FFEECF;
 	padding-top: 2%;
+
+}
+
+
+#projetos h2 {
+	font-family:  'Abril Fatface', serif;
+	color:#E15554;
+	padding-left: 2%;
 	
 }
-#projetos h2{
-	color: #F5F5DC;
-	padding-left: 2%;
-}
+
 .projetos {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -62,8 +106,32 @@ a {
 
 	/*background-color: #DB5461;*/
 	padding: 3%;
-	background-color: #db5462cb;;
-	color: #F6F8FF;
+	background-color:#FFEECF;
+	;
+	color:#333533;
+}
+.projetos a:link {
+  text-decoration: none;
+  border: 3px solid #252525;
+  background-color: #F6F8FF;
+  color: black;
+  padding: 1%;
+  margin: 2%;
+  font-size: 2.5vh;
+}
+.projetos a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.projetos a:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+
+/* selected link */
+.projetos a:active {
+  color: blue;
 }
 
 .projeto {
@@ -78,12 +146,12 @@ a {
 
 .d-block {
 
-	border: 6px solid #F6F8FF;
+	border: 6px solid #252525;
 }
 
 .textoprojeto {
 	font-family: 'DM Serif Display', serif;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 .texto {
@@ -97,7 +165,7 @@ a {
 
 .justificado {
 	text-align: justify;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 #contato {
@@ -112,28 +180,32 @@ a {
 	width: 12%;
 	height: auto;
 }
-
+.icones a{
+	text-decoration: none;
+}
 .icone {
 	padding: 3%;
 	width: 62%;
 	height: auto;
 }
-@media (max-width: 700px) {
+
+@media only screen and (max-width: 600px) {
 	body {
-		padding: 2% 1%;
-	
+		padding: 0% 0%;
+		background-color: #32533D;
+
 	}
+
 	.tudo {
 		padding: 0;
-		margin: 2%;
-		box-shadow: 8px 3px 5px black,
-			-1px -2px 5px gray;
-	
+		margin: 1%;
+		
 	}
+
 	.projetos {
 		display: grid;
 		grid-template-columns: 1fr;
 		padding: 1%;
-		
+
 	}
-  }
+}

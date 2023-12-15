@@ -14,6 +14,11 @@ body {
 		-1px -2px 5px gray;
 
 }
+.navbar-toggler{
+	font-size: 2.5vh;
+	font-family: 'DM Serif Display', serif;
+	font-weight: bold;
+}
 
 .nome {
 	color: #FFEECF;
@@ -24,9 +29,11 @@ body {
 	padding-left: 3%;
 	padding-bottom: 1%;
 }
-.titulo{
-	text-shadow: 2px 3px  black;
+
+.titulo {
+	text-shadow: 2px 3px black;
 }
+
 .collapse {
 	padding-left: 3%;
 }
@@ -37,18 +44,22 @@ body {
 	font-family: 'DM Serif Display', serif;
 	color: #F5F5DC;
 }
-.sobremim h2{
+
+.sobremim h2 {
 	color: #F2CD60;
 }
-.linke{
+
+.linke {
 	text-decoration: none;
-	color: #F6F8FF;
+	color: #E15554;
 }
-.linke:hover{
+
+.linke:hover {
 	color: #252525;
 	box-shadow: 1px black;
 }
-#habilidades{
+
+#habilidades {
 	background-color: #F2CD60;
 	padding: 3%;
 }
@@ -65,19 +76,19 @@ body {
 
 .banner {
 	padding: 1%;
-	background-color:#54a19e;
+	background-color: #54a19e;
 }
 
 .mudar {
 	display: inline-block;
 	height: 100%;
-	width:auto;
+	width: auto;
 	margin: 0;
 	color: #ffff00;
 }
 
 .mudar:hover {
-	
+
 	color: #302c2c;
 }
 
@@ -86,17 +97,17 @@ body {
 }
 
 #projetos {
-	background-color: #FFEECF;
+	background-color: #FFFAE3;
 	padding-top: 2%;
 
 }
 
 
 #projetos h2 {
-	font-family:  'Abril Fatface', serif;
-	color:#E15554;
+	font-family: 'Abril Fatface', serif;
+	color: #E15554;
 	padding-left: 2%;
-	
+
 }
 
 .projetos {
@@ -106,32 +117,34 @@ body {
 
 	/*background-color: #DB5461;*/
 	padding: 3%;
-	background-color:#FFEECF;
+	background-color: #FFFAE3;
 	;
-	color:#333533;
+	color: #333533;
 }
+
 .projetos a:link {
-  text-decoration: none;
-  border: 3px solid #252525;
-  background-color: #F6F8FF;
-  color: black;
-  padding: 1%;
-  margin: 2%;
-  font-size: 2.5vh;
+	text-decoration: none;
+	border: 3px solid #252525;
+	background-color: #F6F8FF;
+	color: black;
+	padding: 1%;
+	margin: 2%;
+	font-size: 2.5vh;
 }
+
 .projetos a:visited {
-  color: black;
+	color: black;
 }
 
 /* mouse over link */
 .projetos a:hover {
-  color: whitesmoke;
-  background-color: black;
+	color: whitesmoke;
+	background-color: black;
 }
 
 /* selected link */
 .projetos a:active {
-  color: blue;
+	color: blue;
 }
 
 .projeto {
@@ -180,16 +193,18 @@ body {
 	width: 12%;
 	height: auto;
 }
-.icones a{
+
+.icones a {
 	text-decoration: none;
 }
+
 .icone {
 	padding: 3%;
 	width: 62%;
 	height: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	body {
 		padding: 0% 0%;
 		background-color: #32533D;
@@ -199,7 +214,7 @@ body {
 	.tudo {
 		padding: 0;
 		margin: 1%;
-		
+
 	}
 
 	.projetos {

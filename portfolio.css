@@ -8,11 +8,18 @@ body {
 
 .tudo {
 	padding: 0;
-	background-color: #F5F5DC;
-	/*border: 6px solid whitesmoke;*/
+	background-color: #FFEECF;
+	border: 6px solid whitesmoke;
+	padding: 3px;
+	/*
 	box-shadow: 8px 3px 5px black,
-		-1px -2px 5px gray;
-
+		-1px -2px 5px gray;*/
+	box-shadow: 8px 2px 43px 5px rgba(0.3,0.3,0.5,0.8);
+}
+li{
+	font-size: 2.5vh;
+	font-weight: bold;
+	font-family: 'DM Serif Display', serif;
 }
 .navbar-toggler{
 	font-size: 2.5vh;
@@ -31,27 +38,31 @@ body {
 }
 
 .titulo {
+	font-family: 'DM Serif Display', serif;
 	text-shadow: 2px 3px black;
 }
-
+.menu-titulo{
+	font-weight: bold;
+	font-family: 'DM Serif Display', serif;
+}
 .collapse {
 	padding-left: 3%;
 }
 
 .sobremim {
-	background-color: #E15554;
+	background-color: #FFFAE3;
 	padding: 4%;
 	font-family: 'DM Serif Display', serif;
-	color: #F5F5DC;
+	color: #353D2F;
 }
 
 .sobremim h2 {
-	color: #F2CD60;
+	color: #353D2F;
 }
 
 .linke {
 	text-decoration: none;
-	color: #E15554;
+	color: #FFEECF;
 }
 
 .linke:hover {
@@ -97,7 +108,7 @@ body {
 }
 
 #projetos {
-	background-color: #FFFAE3;
+	background-color: #E15554;
 	padding-top: 2%;
 
 }
@@ -105,8 +116,14 @@ body {
 
 #projetos h2 {
 	font-family: 'Abril Fatface', serif;
-	color: #E15554;
+	color: #F9DC5C;
 	padding-left: 2%;
+
+}
+#projetos h3 {
+	font-family: 'Abril Fatface', serif;
+	color: #FFEECF;
+	
 
 }
 
@@ -117,7 +134,7 @@ body {
 
 	/*background-color: #DB5461;*/
 	padding: 3%;
-	background-color: #FFFAE3;
+	background-color: #E15554;
 	;
 	color: #333533;
 }
@@ -163,8 +180,9 @@ body {
 }
 
 .textoprojeto {
-	font-family: 'DM Serif Display', serif;
+	font-family: 'Abril Fatface', serif;
 	font-size: 16pt;
+	color: #F6CA83;
 }
 
 .texto {
@@ -172,7 +190,7 @@ body {
 }
 
 .borda {
-	border-bottom: 5px solid #FF5666;
+	border-bottom: 5px solid #FFEECF;
 	margin-bottom: 2px;
 }
 
@@ -182,8 +200,8 @@ body {
 }
 
 #contato {
-	background-color: #32533D;
-	color: #F6F8FF;
+	background-color: #FFEECF;
+	color: #252525;
 	padding: 4%;
 }
 

@@ -1,71 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html class="light">
 
 <head>
     <meta charset="UTF-8" />
     <title>Maicom G. Soares</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
 </head>
-
 <body>
-    <script src="portfolio.js"></script>
-    <div class="tudo">
-        <div class="banner">
-            <h1 class="nome display-3">MAICOM G. SOARES </h1>
-            <!--<img  src="./img/maicom-nome.png" />
-            <p class="borda"></p>-->
+    <div class="tudo">   
+        <div class="modo">
+            <label class="switch">
+                <input class="darkmode" type="checkbox" />
+                <span class="slider round"></span>
+            </label>    
         </div>
-        <nav class="navbar navbar-expand-md navbar-light" style="background-color:#54a19e">
+        <p class="diurno"><b> &nbspModo Claro</b></p>
+        <p class="noturno"><b> &nbspModo Escuro </b></p>
+        <div class="banner">
+            <h1 class="nome">MAICOM G. SOARES </h1>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample04">
-                <ul class="navbar-nav ">
-
-                </ul>
-                <ul class="navbar-nav nav-underline mt-2 mt-lg">
-                    <li>
-                        <a href="#sobre-mim" class="nav-link active" style=color:#F6CA83><b>SOBRE MIM</b></a>
-                    </li>
-                    <li>
-                        <a href="#projetos" class="nav-link" style=color:#F6CA83><b>PROJETOS</b></a>
-                    </li>
-                    <li>
-                        <a href="#habilidades" class="nav-link" style=color:#F6CA83><b>HABILIDADES</b></a>
-                    </li>
-                    <li>
-                        <a href="#contato" class="nav-link" style=color:#F6CA83><b>CONTATO</b></a>
-                    </li>
-                </ul>
-
-            </div>
+        </div>
+        <nav class="navegador">
+            <ul class="navbar">
+                <li>
+                    <a href="#sobre-mim" class="nav"><b>SOBRE MIM</b></a>
+                </li>
+                <li>
+                    <a href="#projetos" class="nav"><b>PROJETOS</b></a>
+                </li>
+                <li>
+                    <a href="#habilidades" class="nav"><b>HABILIDADES</b></a>
+                </li>
+                <li>
+                    <a href="#contato" class="nav"><b>CONTATO</b></a>
+                </li>
+            </ul>
         </nav>
         <section id="sobre-mim">
             <div class="sobremim">
-                <h2 >SOBRE MIM</h2>
-                <br/>
+                <h2>SOBRE MIM</h2>
+                <br />
                 <span>
-                    <img class="foto" src="./img/maicom.jpg" />
+                    <img class="foto" src="./img/a-maicom002.png" />
                 </span>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <p class="justificado">
 
-                     Estudante de tecnologia em sistemas para internet no Instituto Federal de Mato Grosso do Sul campus
+                    Estudante de tecnologia em sistemas para internet no Instituto Federal de Mato Grosso do Sul campus
                     Aquidauana
                     tenho afinidade em criar design de sites web e atender a responsividade de dispositivos
                     moveis gosto de pensar nos
@@ -73,13 +55,13 @@
                     participei de varias competições internas e com
                     outros campus do instituto federal na área de algorítimos e hackatons .
                 </p>
-                <br/>
+                <br />
                 <div class="icones">
                     <a href="https://www.linkedin.com/in/maicom-gon%C3%A7alves-soares-8a4311141/" target="_blank">
                         <img src="./img/linkedin.png" class="icone" alt="linkdin-maicom">
                         <span class="linke">Linkedin</span>
                     </a>
-                    
+
                     <a href="https://github.com/maicom-goncalves" target="_blank">
                         <img src="./img/github.png" class="icone" alt="github-maicom">
                         <span class="linke">GitHub</span>
@@ -87,259 +69,184 @@
                 </div>
             </div>
         </section>
-        
+        <div>
+        </div>
         <div id="projetos">
             <h2 class="titulo"><b>PROJETOS</b></h2>
-            <div>
-                 <div class="projetos">
-                    <h3><b>MS-MED</b></h3>
-                    <div class="projeto">
-
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./img/crm03.png" class="img-fluid d-block w-100" alt="crm3">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/crm02.png" class="img-fluid d-block w-100" alt="crm2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/crm01.png" class="img-fluid d-block w-100" alt="crm33">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+            <div class="projetos">
+                <h3><b>MS-MED</b></h3>
+                <div class="projeto">
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="./img/crm01.png" alt="Imagem 1">
+                            <img src="./img/crm02.png" alt="Imagem 2">
+                            <img src="./img/crm03.png" alt="Imagem 3">
+                            <img src="./img/crm01.png" alt="Imagem 4">
                         </div>
-                    </div>
-                    <div class="texto">
-                        <p class="textoprojeto">
-                         simulação de um CRM  de serviço de plano de saúde com tela de login usando firebase
-                         firestore como banco de dados e o Vue js como framework frontend .
-                        </p>
-                        <p class="textoprojeto">
-                            <b>E-mail: </b>usuario@gmail.com
-                            <br/>
-                            <b>Senha: </b>1234567
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://github.com/maicom-goncalves/Vue/tree/master/cadastros"
-                                target="_blank">
-                                <b>GITHUB</b>
-                            </a>
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://ms-med-3d898.web.app/" target="_blank"><b>DEPLOY</b></a>
-                        </p>
-                        <br />
-                        <div class="icones">
-                            <img src="./img/html.png" class="icone" alt="html-icon">
-                            <img src="./img/css.png" class="icone" alt="css-icon">
-                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
-                            <img src="./img/vue.png" class="icone" alt="vue-icon">
-                            <img src="./img/firebase.png" class="icone" alt="firebase-icon">
-                        </div>
-                        
-                        
                     </div>
                 </div>
-                <p class="borda"></p>
-                <div class="projetos">
-                    <h3><b>TV-SHOW</b></h3>
-                    <div class="projeto">
-
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./img/tvshow.png" class="img-fluid d-block w-100" alt="tvshow1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/tvshow2.png" class="img-fluid d-block w-100" alt="tvshow2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/tvshow3.png" class="img-fluid d-block w-100" alt="tvshow3">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
+                <div class="texto">
+                    <p class="textoprojeto">
+                        simulação de um CRM de serviço de plano de saúde com tela de login usando firebase
+                        firestore como banco de dados e o Vue js como framework frontend .
+                    </p>
+                    <p class="textoprojeto">
+                        <b>E-mail: </b>usuario@gmail.com
+                        <br />
+                        <b>Senha: </b>1234567
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://github.com/maicom-goncalves/Vue/tree/master/cadastros" target="_blank">
+                            <b>GITHUB</b>
+                        </a>
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://ms-med-3d898.web.app/" target="_blank"><b>DEPLOY</b></a>
+                    </p>
+                    <br />
+                    <div class="icones">
+                        <img src="./img/html.png" class="icone" alt="html-icon">
+                        <img src="./img/css.png" class="icone" alt="css-icon">
+                        <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                        <img src="./img/vue.png" class="icone" alt="vue-icon">
+                        <img src="./img/firebase.png" class="icone" alt="firebase-icon">
                     </div>
-                    <div class="texto">
-                        <p class="textoprojeto">
-                            Este projeto se trata de um buscador de series com suporte a P.W.A consumindo uma
-                            api fornecida gratuitamente.
-                            para consumir essa api usei HTML ,CSS ,SCSS JavaScript e React js
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
-                                target="_blank">
-                                <b>GITHUB</b>
-                            </a>
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://tvsearch-4d4d8.web.app/" target="_blank"><b>DEPLOY</b></a>
-                        </p>
-                        <br />
-                        <div class="icones">
-                            <img src="./img/html.png" class="icone" alt="html-icon">
-                            <img src="./img/css.png" class="icone" alt="css-icon">
-                            <img src="./img/scss.png" class="icone" alt="scss-icon">
-                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
-                            <img src="./img/react.png" class="icone" alt="react-icon">
+
+
+                </div>
+            </div>
+            <p class="borda"></p>
+            <div class="projetos">
+                <h3><b>TV-SHOW</b></h3>
+                <div class="projeto">
+                    <div class="carousel">
+                        <div class="carousel-imagestwo">
+                            <img src="./img/tvshow.png" alt="tvshow1">
+                            <img src="./img/tvshow2.png" alt="tvshow2">
+                            <img src="./img/tvshow3.png" alt="tvshow3">
+                            <img src="./img/tvshow.png" alt="Imagem 4">
                         </div>
-                        
-                        
                     </div>
                 </div>
-
-                <br />
-                <p class="borda"></p>
-                <br />
-                <div class="projetos">
-                    <h3><b>BUSCADOR ARTIGOS WIKIPEDIA</b></h3>
-                    <div class="projeto">
-
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./img/wiki.png" class="d-block w-100" alt="wiki-projeto1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/wiki2.png" class="d-block w-100" alt="wiki-projeto2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/wiki3.png" class="d-block w-100" alt="wiki-projeto3">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="texto">
-                        <p class="textoprojeto">
-                            Este projeto se trata de um buscador da sinopse de arquivos do
-                            wikipedia com a api deles fornecida gratuitamente.
-
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
-                                target="_blank">
-                                <b>GITHUB</b>
-                            </a>
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://procurando-artigos.web.app/" target="_blank"><b>DEPLOY</b></a>
-                        </p>
-                        <br />
-                        <div class="icones">
-                            <img src="./img/html.png" class="icone" alt="html-icon">
-                            <img src="./img/css.png" class="icone" alt="css-icon">
-                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
-                            <img src="./img/react.png" class="icone" alt="react-icon">
-                        </div> 
-                    </div>
-                </div>
-                <br />
-                <p class="borda"></p>
-                <div class="projetos">
-                    <h3><b>BUSCA ANIME</b></h3>
-                    <div class="projeto">
-
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="./img/animeone.png" class="img-fluid d-block w-100" alt="animeone1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="./img/animeone2.png" class="img-fluid d-block w-100" alt="animeone2">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="texto">
-                        <p class="textoprojeto">
-                            Projeto de um buscador de anime por nome ou parte do
-                            nome uso a api da jikan fornecida gratuitamente para projetos
-                        </p>
-                        <br/>
-                         <p>
-                            <a href="https://github.com/maicom-goncalves/react/tree/master/AnimeApp-main"
-                                target="_blank">
-                                <b>GITHUB</b>
-                            </a>
-                        </p>
-                        <br />
-                        <p>
-                            <a href="https://pesquisa-anime.web.app/" target="_blank"><b>DEPLOY</b></a>
-                        </p>
-                        <br/>
-                        <div class="icones">
-                            <img src="./img/html.png" class="icone" alt="html-icon">
-                            <img src="./img/css.png" class="icone" alt="css-icon">
-                            <img src="./img/javascript.png" class="icone" alt="javascript-icon">
-                            <img src="./img/react.png" class="icone" alt="react-icon">
-                        </div>
-                        
-                       
+                <div class="texto">
+                    <p class="textoprojeto">
+                        Este projeto se trata de um buscador de series com suporte a P.W.A consumindo uma
+                        api fornecida gratuitamente.
+                        para consumir essa api usei HTML ,CSS ,SCSS JavaScript e React js
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
+                            target="_blank">
+                            <b>GITHUB</b>
+                        </a>
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://tvsearch-4d4d8.web.app/" target="_blank"><b>DEPLOY</b></a>
+                    </p>
+                    <br />
+                    <div class="icones">
+                        <img src="./img/html.png" class="icone" alt="html-icon">
+                        <img src="./img/css.png" class="icone" alt="css-icon">
+                        <img src="./img/scss.png" class="icone" alt="scss-icon">
+                        <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                        <img src="./img/react.png" class="icone" alt="react-icon">
                     </div>
                 </div>
             </div>
 
+            <br />
+            <p class="borda"></p>
+            <br />
+            <div class="projetos">
+                <h3><b>BUSCADOR ARTIGOS WIKIPEDIA</b></h3>
+                <div class="projeto">
+                    <div class="carousel">
+                        <div class="carousel-imagesthree">
+                            <img src="./img/wiki.png" alt="wiki-projeto1">
+                            <img src="./img/wiki2.png" alt="wiki-projeto2">
+                            <img src="./img/wiki3.png" alt="wiki-projeto3">
+                            <img src="./img/wiki.png" alt="wiki-projeto1">
+                        </div>
+                    </div>
+                </div>
+                <div class="texto">
+                    <p class="textoprojeto">
+                        Este projeto se trata de um buscador da sinopse de arquivos do
+                        wikipedia com a api deles fornecida gratuitamente.
+
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://github.com/maicom-goncalves/CPW4_2019_2/tree/master/tv-search-pwa"
+                            target="_blank">
+                            <b>GITHUB</b>
+                        </a>
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://procurando-artigos.web.app/" target="_blank"><b>DEPLOY</b></a>
+                    </p>
+                    <br />
+                    <div class="icones">
+                        <img src="./img/html.png" class="icone" alt="html-icon">
+                        <img src="./img/css.png" class="icone" alt="css-icon">
+                        <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                        <img src="./img/react.png" class="icone" alt="react-icon">
+                    </div>
+                </div>
+            </div>
+            <br />
+            <p class="borda"></p>
+            <div class="projetos">
+                <h3><b>BUSCA ANIME</b></h3>
+                <div class="projeto">
+
+                    <div class="carousel">
+                        <div class="carousel-imagesfour">
+                            <img src="./img/animeone.png" alt="animeone1">
+                            <img src="./img/animeone2.png" alt="animeone2">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="texto">
+                    <p class="textoprojeto">
+                        Projeto de um buscador de anime por nome ou parte do
+                        nome uso a api da jikan fornecida gratuitamente para projetos
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://github.com/maicom-goncalves/react/tree/master/AnimeApp-main" target="_blank">
+                            <b>GITHUB</b>
+                        </a>
+                    </p>
+                    <br />
+                    <p>
+                        <a href="https://pesquisa-anime.web.app/" target="_blank"><b>DEPLOY</b></a>
+                    </p>
+                    <br />
+                    <div class="icones">
+                        <img src="./img/html.png" class="icone" alt="html-icon">
+                        <img src="./img/css.png" class="icone" alt="css-icon">
+                        <img src="./img/javascript.png" class="icone" alt="javascript-icon">
+                        <img src="./img/react.png" class="icone" alt="react-icon">
+                    </div>
+
+
+                </div>
+            </div>
         </div>
+
+
         <div id="habilidades">
             <h2 class="menu-titulo"><b>HABILIDADES</b></h2>
             <div class="icones">
                 <!-- configurar hover nome da tecnologia-->
-                <img src="./img/html.png" class="icone" alt="html-icon"> 
-                
+                <img src="./img/html.png" class="icone" alt="html-icon">
                 <img src="./img/css.png" class="icone" alt="css-icon">
                 <img src="./img/javascript.png" class="icone" alt="javascript-icon">
                 <img src="./img/react.png" class="icone" alt="react-icon">
@@ -349,23 +256,25 @@
         </div>
         <footer id="contato">
             <h2 class="menu-titulo"><b>CONTATO</b></h2>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="icones">
                 <a href="https://www.linkedin.com/in/maicom-gon%C3%A7alves-soares-8a4311141/" target="_blank">
                     <img src="./img/linkedin.png" class="icone" alt="linkdin-maicom">
                     <span class="linke">Linkedin</span>
                 </a>
-                
+
                 <a href="https://github.com/maicom-goncalves" target="_blank">
                     <img src="./img/github.png" class="icone" alt="github-maicom">
                     <span class="linke">GitHub</span>
                 </a>
             </div>
-            <br/>
+            <br />
             <h4><b>Email :</b> gonm202@gmail.com</h4>
-            
         </footer>
+    </div>
+    <script src="./portfolio.js"></script>
+
 </body>
 
 </html>

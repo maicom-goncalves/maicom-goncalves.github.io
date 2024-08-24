@@ -18,27 +18,33 @@
 	--shadow:13px 6px 12px 0px rgba(0,0,0,0.75);
 	--shadow2:13px 6px 12px 0px rgba(0,0,0,0.75);
 	--shadow3:13px 6px 12px 0px rgba(0,0,0,0.75);
+	--sombra1:2px 1px 1px 0px rgba(32, 32, 29, 0.512);
+ 	--sombra2:2px 1px 1px 0px rgba(23, 23, 21, 0.395);
+  	--sombra3:1px 1px 1px 0px rgba(23, 23, 22, 0.463);
   }
   :root.dark{
 	--noturno:inline;
 	--diurno:none;
-	--base-color:#565254;
+	--base-color:#312f30;
 	--base-color2:#1f487e;
 	--primary-color:#1f487e;
-	--hightight-color:#1a1f16;
-	--text-color:#57e2e5;
-	--text-color2:#ffe7df;
-	--text-color3:#ffe7df;
+	--hightight-color:#000000;
+	--text-color:#23ce6b;
+	--text-color2:#c49e85;
+	--text-color3:#c17c74;
 	--title-color:#ef2d56;
 	--backgroundcolor:#000000;
-	--backgroundcolor2:#e9e9e9;
-	--projetos:#223843;
+	--backgroundcolor2:#23ce6b;
+	--projetos:#0a0a0a;
 	--habilidades:#223843;
 	--body-text: Arial, Helvetica, sans-serif;
 	--title-text:Times ,Georgia,serif;
 	--shadow:1px -1px 29px -1px rgba(112,229,235,1);
 	--shadow2:1px -1px 29px -1px rgba(112,229,235,1);
 	--shadow3: 1px -1px 29px -1px rgba(112,229,235,1);
+	--sombra1:-3px 3px 32px 5px rgba(35,206,107,1);
+ 	--sombra2:-3px 3px 32px 5px rgba(35,206,107,1);
+  	--sombra3:-3px 3px 32px 5px rgba(35,206,107,1);
   }
   
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
@@ -70,7 +76,6 @@
 	width: 70px;
 	height: 34px
   }
-  
   .switch input {
 	opacity: 0;
 	width: 0;
@@ -96,23 +101,18 @@
 	bottom: 4px;
 	background-color: #7c7c7c;
   }
-  
   input:checked+.slider {
 	background-color: #fffbdb ;
   }
-  
   input:focus+.slider {
 	box-shadow: 0 0 1px #353635;
   }
-  
   input:checked+.slider:before {
 	transform: translateX(26px)
   }
-  
   .slider.round {
 	border-radius: 44px
   }
-  
   .slider.round:before {
 	border-radius: 50%
   }
@@ -158,7 +158,7 @@
   }
   .navegador ul :hover {
 	background-color: var(--backgroundcolor2);
-	color:var(--text-color);
+	color:var(--text-color3);
   }
   .navegador .active {
 	background-color: #af2bbf;
@@ -180,15 +180,11 @@
 	padding-left: 3%;
 	padding-bottom: 1%;
   }
-  
   .titulo {
 	color: var(--text-color);
 	font-family: 'DM Serif Display', serif;
   }
-  .menu-titulo{
-	font-weight: bold;
-	font-family: 'DM Serif Display', serif;
-  }
+ 
   .collapse {
 	padding-left: 3%;
   }
@@ -204,6 +200,7 @@
   .linke {
 	text-decoration: none;
 	color:var(--base-color);
+    fill: var(--text-color2);
   }
   .linke:hover {
 	color:var(--text-color2);
@@ -239,6 +236,15 @@
   
 	color: #302c2c;
   }
+  .tecnologias{
+	fill:var(--text-color3);
+	margin: 2px;
+  }
+  .techs{
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+  }
   #projetos {
 	background-color: var(--projetos);
 	padding-top: 2%;
@@ -259,32 +265,32 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "projeto""texto";
-  
-	/*background-color: #DB5461;*/
 	padding: 3%;
 	background-color: var(--projetos);
-	;
 	color:var(--primary-color);
   }
   
   .projetos a:link {
 	text-decoration: none;
-	border: 3px solid #252525;
-	background-color: #F6F8FF;
+	border: 3px solid var(--text-color);
+	background-color:var(--base-color2);
 	color: black;
 	padding: 1%;
 	margin: 2%;
 	font-size: 2.5vh;
   }
-  
   .projetos a:visited {
 	color: black;
   }
   
   /* mouse over link */
   .projetos a:hover {
-	color: whitesmoke;
-	background-color: black;
+	color:var(--base-color2);
+	border: 3px solid var(--text-color);
+	background-color: var(--text-color);
+	-webkit-box-shadow:var(--sombra1);
+    -moz-box-shadow: var(--sombra2);
+    box-shadow: var(--sombra3);
   }
   
   /* selected link */
@@ -334,6 +340,7 @@
   
   .icones a {
 	text-decoration: none;
+	margin: 7px;
   }
   
   .icone {
@@ -385,22 +392,32 @@
 	width: 100%;
 	border-radius: 10px;
   }
-  
-  @media only screen and (max-width: 768px) {
+  .menu-titulo{
+	color:var(--text-color3);
+	font-weight: bold;
+	font-family: 'DM Serif Display', serif;
+  }
+  .skills{
+	fill:var(--text-color3);
+	margin: 2px;
+  }
+  .icons{
+	width: 80px;
+	height: 80px;
+	margin: 2px;
+  }
+
+  @media only screen and (max-width: 600px){
 	body {
 	  padding: 0% 0%;
-	  
 	}
-  
 	.tudo {
 	  padding: 0;
 	  margin: 1%;
-  
 	}
-  
 	.projetos {
-	  display: grid;
 	  grid-template-columns: 1fr;
+	  grid-template-rows: 1fr 1fr;
 	  padding: 1%;
   
 	}

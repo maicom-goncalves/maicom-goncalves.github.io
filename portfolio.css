@@ -1,6 +1,8 @@
 :root.light {
 	--noturno: none;
 	--diurno: inline;
+	--slider-color:#edcc71;
+	--slider-shadow:9px 7px 35px -4px rgba(231,166,26,1);
 	--base-color: #0ca4a5;
 	--base-color2: #eff9f0;
 	--primary-color: #fdca40;
@@ -29,6 +31,8 @@
 :root.dark {
 	--noturno: inline;
 	--diurno: none;
+	--slider-color:#cfcfd0;
+	--slider-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);;
 	--base-color: #312f30;
 	--base-color2: #1f487e;
 	--primary-color: #1f487e;
@@ -64,6 +68,7 @@ body {
 }
 
 /*Botão de modo noturno css*/
+
 .modo {
 	margin: 1%;
 	display: flex;
@@ -99,7 +104,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ede7d9;
+	background-color: #ddddd6;
 }
 
 .slider, .slider:before {
@@ -113,7 +118,8 @@ body {
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: #7c7c7c;
+	background-color: var(--slider-color);
+	box-shadow: var(--slider-shadow);
 }
 
 input:checked+.slider {
@@ -121,7 +127,7 @@ input:checked+.slider {
 }
 
 input:focus+.slider {
-	box-shadow: 0 0 1px #353635;
+	box-shadow: 0 0 1px var(--slider-color);
 }
 
 input:checked+.slider:before {
@@ -207,6 +213,7 @@ li {
 	font-size: 5.5vh;
 	padding-left: 3%;
 	padding-bottom: 1%;
+	
 }
 
 .titulo {
@@ -299,7 +306,7 @@ li {
 }
 
 #projetos h3 {
-	font-family: 'Abril Fatface', serif;
+	font-family: 'DM Serif Display', serif;
 	color: var(--text-color3);
 }
 
@@ -350,7 +357,7 @@ li {
 }
 
 .textoprojeto {
-	font-family: 'Abril Fatface', serif;
+	font-family: 'DM Serif Display', serif;
 	font-size: 16pt;
 	color: var(--text-color3);
 }
@@ -458,7 +465,15 @@ li {
 	fill:var(--tech-hover);
 	filter: var(--tech-shadow);
   }
-
+.habilidades-titulo{
+	color: var(--text-color3);
+}
+.texto-habilidades{
+	font-family: 'DM Serif Display', serif;
+	font-size: 16pt;
+	color: var(--text-color3);
+	text-align: justify;
+}
 @media only screen and (max-width: 768px){
 	body {
 		padding: 0% 0%;

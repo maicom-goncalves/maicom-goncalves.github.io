@@ -10,6 +10,7 @@
 	--text-color: #262322;
 	--text-color2: #eff9f0;
 	--text-color3: #262322;
+	--text-color4: #262322;
 	--text-title: #A31621;
 	--backgroundcolor: #e9e9e9;
 	--backgroundcolor2: #f06969;
@@ -20,9 +21,9 @@
 	--title-text: Times, Georgia, serif;
 	--tech-hover:#262322;
 	--tech-shadow:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-	--shadow: 13px 6px 12px 0px rgba(0, 0, 0, 0.75);
-	--shadow2: 13px 6px 12px 0px rgba(0, 0, 0, 0.75);
-	--shadow3: 13px 6px 12px 0px rgba(0, 0, 0, 0.75);
+	--shadow:3px 3px 66px 14px rgb(195, 190, 195);
+	--shadow2: 3px 3px 66px 14px rgb(202, 199, 202);
+	--shadow3:   3px 3px 66px 14px rgb(202, 195, 202);
 	--sombra1: 2px 1px 1px 0px rgba(32, 32, 29, 0.512);
 	--sombra2: 2px 1px 1px 0px rgba(23, 23, 21, 0.395);
 	--sombra3: 1px 1px 1px 0px rgba(23, 23, 22, 0.463);
@@ -40,6 +41,7 @@
 	--text-color: #23ce6b;
 	--text-color2: #c49e85;
 	--text-color3: #c17c74;
+	--text-color4:#000000;
 	--title-color: #ef2d56;
 	--backgroundcolor: #000000;
 	--backgroundcolor2: #23ce6b;
@@ -190,7 +192,7 @@ li {
 
 .navegador ul :hover {
 	background-color: var(--backgroundcolor2);
-	color: var(--text-color3);
+	color: var(--text-color4);
 }
 
 .navegador .active {
@@ -306,7 +308,7 @@ li {
 }
 
 #projetos h3 {
-	font-family: 'DM Serif Display', serif;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	color: var(--text-color3);
 }
 

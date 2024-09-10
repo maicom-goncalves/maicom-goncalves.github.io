@@ -146,7 +146,7 @@ input:checked+.slider:before {
 
 .tudo {
 	padding: 0;
-	margin: 1% 12%;
+	margin: 1% 8%;
 	border-radius: 8px;
 	border: 6px solid var(--backgroundcolor);
 	padding: 3px;
@@ -316,7 +316,7 @@ li {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "projeto""texto";
-	padding: 3%;
+	padding: 0% 3%;
 	background-color: var(--projetos);
 	color: var(--primary-color);
 }
@@ -355,17 +355,14 @@ li {
 
 .texto {
 	grid-column: 2;
-	padding: 4%;
+	padding:0% 4%;
 }
 
 .textoprojeto {
 	font-family: 'DM Serif Display', serif;
 	font-size: 16pt;
 	color: var(--text-color3);
-}
-
-.texto {
-	grid-column: 2;
+	text-align: justify;
 }
 
 .borda {

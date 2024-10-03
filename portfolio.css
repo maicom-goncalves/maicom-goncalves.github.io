@@ -1,6 +1,7 @@
 :root.light {
 	--noturno: none;
 	--diurno: inline;
+	--maicom:linear-gradient(to right, #b0f2ee , #38e3d8);
 	--slider-color: #edcc71;
 	--slider-shadow: 9px 7px 35px -4px rgba(231, 166, 26, 1);
 	--base-color: #0ca4a5;
@@ -32,9 +33,9 @@
 :root.dark {
 	--noturno: inline;
 	--diurno: none;
+	--maicom:linear-gradient(to right, #b0f2ee , #38e3d8);
 	--slider-color: #cfcfd0;
 	--slider-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-	;
 	--base-color: #312f30;
 	--base-color2: #1f487e;
 	--primary-color: #1f487e;
@@ -171,9 +172,8 @@ input:checked+.slider:before {
 
 #traco {
 	filter: var(--shadow);
-	stroke: var(--tech-hover);
 	stroke-dasharray: 500;
-	/* Comprimento total do traço */
+	stroke: var(--tech-hover); 
 	stroke-dashoffset: 500;
 	/* Inicialmente, o traço está completamente escondido */
 	animation: animarTraco 4s linear infinite;

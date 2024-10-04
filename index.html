@@ -22,9 +22,21 @@
         <div class="banner">
             <!--<h1 class="nome">MAICOM G. SOARES </h1>-->
             <svg id="maicom">
-                <text x="50" y="50" font-size="60" id="texto">Maicom G. Soares</text>
-                <path id="traco" d="M100,10 L100,40 Q100,40 100,50 L520,50" stroke-width="3" fill="none" />
-               
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="5%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
+                        <stop offset="15%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
+                        <stop offset="35%" style="stop-color:rgb(81, 172, 211);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(64, 177, 226);stop-opacity:1" />
+                    </linearGradient> 
+                      
+                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="5%" style="stop-color:rgb(150, 228, 223);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(56, 227, 216);stop-opacity:1" />
+                    </linearGradient> 
+                </defs>
+                <text x="50" y="50" font-size="60" id="texto" >Maicom G. Soares</text>
+                <path id="traco"  d="M100,10 L100,40 Q100,40 100,50 L530,50" stroke-width="2" fill="none" />
             </svg>
         </div>
         <nav class="navegador">

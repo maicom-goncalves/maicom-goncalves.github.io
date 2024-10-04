@@ -1,7 +1,7 @@
 :root.light {
+	--teste:url(#grad1);
 	--noturno: none;
 	--diurno: inline;
-	--maicom:linear-gradient(to right, #b0f2ee , #38e3d8);
 	--slider-color: #edcc71;
 	--slider-shadow: 9px 7px 35px -4px rgba(231, 166, 26, 1);
 	--base-color: #0ca4a5;
@@ -31,23 +31,23 @@
 }
 
 :root.dark {
+	--teste:url(#grad3);
 	--noturno: inline;
 	--diurno: none;
-	--maicom:linear-gradient(to right, #b0f2ee , #38e3d8);
 	--slider-color: #cfcfd0;
 	--slider-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 	--base-color: #312f30;
 	--base-color2: #1f487e;
 	--primary-color: #1f487e;
-	--hightight-color: #000000;
+	--hightight-color: #121212;
 	--text-color: #23ce6b;
 	--text-color2: #c49e85;
 	--text-color3: #c17c74;
 	--text-color4: #000000;
 	--title-color: #ef2d56;
-	--backgroundcolor: #000000;
+	--backgroundcolor: #121212;
 	--backgroundcolor2: #23ce6b;
-	--projetos: #0a0a0a;
+	--projetos: #121212;
 	--linkes: #c17c74;
 	--habilidades: #223843;
 	--body-text: Arial, Helvetica, sans-serif;
@@ -164,18 +164,17 @@ input:checked+.slider:before {
 }
 
 #maicom text {
-	fill: var(--text-color);
+	fill:var(--teste);
 	font-family: 'Abril Fatface', serif;
 	padding-left: 3%;
 	padding-bottom: 1%;
 }
 
 #traco {
-	filter: var(--shadow);
 	stroke-dasharray: 500;
-	stroke: var(--tech-hover); 
 	stroke-dashoffset: 500;
-	/* Inicialmente, o traço está completamente escondido */
+	filter:drop-shadow(0 0 7px #76d0c0ef);
+	stroke: var(--teste);
 	animation: animarTraco 4s linear infinite;
 }
 
@@ -506,6 +505,7 @@ li {
 	color: var(--text-color3);
 	text-align: justify;
 }
+
 
 @media only screen and (max-width: 768px) {
 	body {

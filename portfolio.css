@@ -147,13 +147,20 @@ input:checked+.slider:before {
 }
 
 .tudo {
-	margin: 1% 8%;
+	margin: 1% 9%;
 	border-radius: 8px;
 	border: 6px solid var(--backgroundcolor);
 	padding: 3px;
 	-webkit-box-shadow: var(--shadow3);
 	-moz-box-shadow: var(--shadow2);
 	box-shadow: var(--shadow);
+}
+.topsite{
+	margin: 0% 9%;
+	border-radius: 8px;
+	position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #maicom {
@@ -223,16 +230,10 @@ li {
 	background-color: var(--backgroundcolor2);
 	color: var(--text-color4);
 }
-
-.navegador .active {
-	background-color: #af2bbf;
-	color: whitesmoke;
-}
-
-.navegador .active a {
-	color: #da4167;
-}
-
+.selected {
+	background-color: var(--backgroundcolor2);
+	color: var(--text-color4);
+  }
 .navegador a {
 	color: #FFF;
 }

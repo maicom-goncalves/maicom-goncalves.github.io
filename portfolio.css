@@ -238,13 +238,6 @@ li {
 	color: #FFF;
 }
 
-.nome {
-	color: var(--text-color);
-	border-color: var(--shadow2);
-	font-family: 'Abril Fatface', serif;
-
-}
-
 .titulo {
 	color: var(--text-color);
 	font-family: 'DM Serif Display', serif;

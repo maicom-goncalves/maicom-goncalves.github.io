@@ -1,5 +1,5 @@
 :root.light {
-	--teste:url(#grad1);
+	--teste: url(#grad1);
 	--noturno: none;
 	--diurno: inline;
 	--slider-color: #edcc71;
@@ -21,6 +21,10 @@
 	--body-text: Arial, Helvetica, sans-serif;
 	--title-text: Times, Georgia, serif;
 	--tech-hover: #262322;
+	--email-botom:#3185fc;
+	--email-botom-hover:#29bf12;
+	--email-color: #39393a;
+	--email-color-hover: #e9e9e9;
 	--tech-shadow: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 	--shadow: 3px 3px 66px 14px rgb(195, 190, 195);
 	--shadow2: 3px 3px 66px 14px rgb(202, 199, 202);
@@ -31,7 +35,7 @@
 }
 
 :root.dark {
-	--teste:url(#grad3);
+	--teste: url(#grad3);
 	--noturno: inline;
 	--diurno: none;
 	--slider-color: #cfcfd0;
@@ -53,6 +57,10 @@
 	--body-text: Arial, Helvetica, sans-serif;
 	--title-text: Times, Georgia, serif;
 	--tech-hover: #23ce6b;
+	--email-botom:#208aae;
+	--email-botom-hover:#4fb286;
+	--email-color:#272932;
+	--email-color-hover: #f0f2ef;
 	--tech-shadow: drop-shadow(-3px 5px 22px rgb(35, 206, 107, 1));
 	--shadow: 1px -1px 29px -1px rgba(112, 229, 235, 1);
 	--shadow2: 1px -1px 29px -1px rgba(112, 229, 235, 1);
@@ -147,7 +155,7 @@ input:checked+.slider:before {
 }
 
 .tudo {
-	margin: 1% 9%;
+	margin: 1% 10%;
 	border-radius: 8px;
 	border: 6px solid var(--backgroundcolor);
 	padding: 3px;
@@ -155,32 +163,34 @@ input:checked+.slider:before {
 	-moz-box-shadow: var(--shadow2);
 	box-shadow: var(--shadow);
 }
-.topsite{
-	margin: 0% 9%;
+
+.topsite {
+	margin: 0% 10%;
 	border-radius: 8px;
 	position: sticky;
-    top: 0;
-    z-index: 1;
+	top: 0;
+	z-index: 1;
 }
 
 #maicom {
 	width: 88%;
-	height: 6%;
+	height: 7%;
 	margin-top: 1%;
 	margin-bottom: 0%;
 }
 
 #maicom text {
-	fill:var(--teste);
+	fill: var(--teste);
 	font-family: 'Abril Fatface', serif;
 	padding-left: 3%;
 	padding-bottom: 1%;
 }
 
 #traco {
+	margin-top: 1px;
 	stroke-dasharray: 500;
 	stroke-dashoffset: 500;
-	filter:drop-shadow(0 0 7px #76d0c0ef);
+	filter: drop-shadow(0 0 7px #76d0c0ef);
 	stroke: var(--teste);
 	animation: animarTraco 4s linear infinite;
 }
@@ -230,10 +240,12 @@ li {
 	background-color: var(--backgroundcolor2);
 	color: var(--text-color4);
 }
+
 .selected {
 	background-color: var(--backgroundcolor2);
 	color: var(--text-color4);
-  }
+}
+
 .navegador a {
 	color: #FFF;
 }
@@ -316,6 +328,7 @@ li {
 .techs:hover {
 	fill: var(--tech-hover);
 	filter: var(--tech-shadow);
+	transition-duration: 0.3s;
 }
 
 #projetos {
@@ -365,6 +378,7 @@ li {
 	-webkit-box-shadow: var(--sombra1);
 	-moz-box-shadow: var(--sombra2);
 	box-shadow: var(--sombra3);
+	transition-duration: 0.5s;
 }
 
 .projetos a:active {
@@ -402,6 +416,49 @@ li {
 	background-color: var(--base-color);
 	color: var(--text-color2);
 	padding: 4%;
+}
+
+#texto-a-copiar {
+	display: none;
+}
+
+.copia-email {
+	text-align: center;
+	border-radius: 8px;
+	background-color: var(--text-color2);
+	width: 40%;
+	height: auto;
+}
+
+.copicone h3{
+	text-align: center;
+	color: var(--email-color);
+	font-family: 'Abril Fatface', serif;
+	font-size: x-large;
+}
+
+.copitwo {
+	display: none;
+}
+#iconemail{
+	fill:var(--email-botom) ;
+	width: 38px;
+	height: 36px;
+}
+.copiar {
+	background-color: var(--email-botom);
+	color: var(--email-color);
+	border: none;
+	padding: 3%;
+	margin: 2%;
+	font-size: x-large;
+	border-radius: 8px;
+}
+
+.copiar:hover {
+	color: var(--email-color-hover);
+	background-color: var(--email-botom-hover);
+	cursor: pointer;
 }
 
 .icones {
@@ -485,6 +542,7 @@ li {
 }
 
 .icons:hover {
+	transition-duration: 0.2s;
 	fill: var(--tech-hover);
 	filter: var(--tech-shadow);
 }
@@ -499,7 +557,6 @@ li {
 	color: var(--text-color3);
 	text-align: justify;
 }
-
 
 @media only screen and (max-width: 768px) {
 	body {

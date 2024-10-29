@@ -79,3 +79,41 @@ function showNextImagefour() {
 }
 
 setInterval(showNextImagefour, 4000);
+
+
+ function copiarTexto() {
+            
+            var texto = document.getElementById("texto-a-copiar");
+
+            
+            var temp = document.createElement("textarea");
+            document.body.appendChild(temp);
+            temp.value = texto.textContent;
+            temp.select();
+            document.execCommand("copy");
+            document.body.removeChild(temp);
+
+            alternarVisibilidade();
+        }
+        function alternarVisibilidade() {
+            const elementoOculto = document.querySelector('.copitwo');
+            const elementoVisivel = document.querySelector('.copicone');
+        
+            // Mostrar o elemento oculto por 5 segundos
+            elementoOculto.classList.remove('copitwo');
+            elementoOculto.classList.add('copicone');
+        
+            elementoVisivel.classList.remove('copicone');
+            elementoVisivel.classList.add('copitwo');
+        
+            setTimeout(() => {
+                // Voltar ao estado inicial após 5 segundos
+                elementoOculto.classList.add('copitwo');
+                elementoOculto.classList.remove('copicone');
+        
+                elementoVisivel.classList.add('copicone');
+                elementoVisivel.classList.remove('copitwo');
+            }, 5000); 
+        }
+        
+       

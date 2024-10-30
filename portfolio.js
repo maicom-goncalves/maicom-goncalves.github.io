@@ -99,7 +99,7 @@ setInterval(showNextImagefour, 4000);
             const elementoOculto = document.querySelector('.copitwo');
             const elementoVisivel = document.querySelector('.copicone');
         
-            // Mostrar o elemento oculto por 5 segundos
+            // Mostrar o elemento oculto por 4 segundos
             elementoOculto.classList.remove('copitwo');
             elementoOculto.classList.add('copicone');
         
@@ -107,13 +107,13 @@ setInterval(showNextImagefour, 4000);
             elementoVisivel.classList.add('copitwo');
         
             setTimeout(() => {
-                // Voltar ao estado inicial após 5 segundos
+                // Voltar ao estado inicial após 4 segundos
                 elementoOculto.classList.add('copitwo');
                 elementoOculto.classList.remove('copicone');
         
                 elementoVisivel.classList.add('copicone');
                 elementoVisivel.classList.remove('copitwo');
-            }, 5000); 
+            }, 4000); 
         }
         
        

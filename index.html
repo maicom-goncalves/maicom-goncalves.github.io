@@ -11,17 +11,17 @@
 <body>
     <div class="topsite">
         <nav class="navegador">
-            <ul class="navbar">
-                <li>
+            <ul class="navbar">     
+                <li class="menu-top">
                     <a href="#sobre-mim" class="nav"><b>SOBRE MIM</b></a>
                 </li>
-                <li>
+                <li class="menu-top">
                     <a href="#projetos" class="nav"><b>PROJETOS</b></a>
                 </li>
-                <li>
+                <li class="menu-top">
                     <a href="#habilidades" class="nav"><b>HABILIDADES</b></a>
                 </li>
-                <li>
+                <li class="menu-top">
                     <a href="#contato" class="nav"><b>CONTATO</b></a>
                 </li>
             </ul>
@@ -34,10 +34,10 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        <p class="diurno"><b> &nbspModo Escuro</b></p>
-        <p class="noturno"><b> &nbspModo Claro </b></p>
+        <p class="diurno"><b> &nbsp Escuro</b></p>
+        <p class="noturno"><b> &nbsp Claro </b></p>
         <div class="banner">
-            <!--<h1 class="nome">MAICOM G. SOARES </h1>-->
+            <!--
             <svg id="maicom">
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -57,7 +57,7 @@
                 <text x="50" y="50" font-size="60" id="texto">Maicom G. Soares</text>
                 <path id="traco" d="M100,20 L100,40 Q100,40 100,50 L530,50" stroke-width="2" fill="none" />
                 <path id="traco" d="M50,60 L99,60 Q70,40 100,60 L530,60" stroke-width="2" fill="none" />
-            </svg>
+            </svg> -->
         </div>
         <section id="sobre-mim">
             <div class="sobremim">
@@ -66,13 +66,32 @@
                 <span>
                     <img class="foto" src="./img/a-maicom002.png" />
                 </span>
-                
+                <svg id="maicom">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="5%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
+                            <stop offset="15%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
+                            <stop offset="35%" style="stop-color:rgb(81, 172, 211);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(64, 177, 226);stop-opacity:1" />
+                        </linearGradient>
+                         
+                        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="5%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
+                            <stop offset="15%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
+                            <stop offset="35%" style="stop-color:rgb(56, 227, 216);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(49, 209, 198);stop-opacity:1" />
+                        </linearGradient> 
+                    </defs>
+                    <text x="50" y="50" font-size="60" id="texto">Maicom G. Soares</text>
+                    <path id="traco" d="M100,20 L100,40 Q100,40 100,50 L530,50" stroke-width="2" fill="none" />
+                    <path id="traco" d="M50,60 L99,60 Q70,40 100,60 L530,60" stroke-width="2" fill="none" />
+                </svg>
                 <br />
                 <br />
                 <p class="justificado">
                     <b>Desenvolvedor Web</b> com mais afinidade em <b> Frontend</b>,
-                    já ajudei a desenvolver componentes para aplicações web e em projetos próprios desenvolvi
-                    totalmente algumas aplicações web, além de <b>HTML ,CSS </b> e <b>JavaScript</b> gosto muito de
+                    já ajudei a desenvolver componentes para aplicações web e em projetos próprios ,desenvolvi
+                    totalmente algumas aplicações web além de <b>HTML ,CSS </b> e <b>JavaScript</b> gosto muito de
                     utilizar a
                     biblioteca <b>React js</b>
                     e o framework <b>Vue js </b> .
@@ -85,7 +104,7 @@
                 </p>
                 <br />
                 <div class="icones">
-                    <a class="linke" href="https://www.linkedin.com/in/maicom-gon%C3%A7alves-soares-8a4311141/"
+                    <a class="linkeone" href="https://www.linkedin.com/in/maicom-gon%C3%A7alves-soares-8a4311141/"
                         target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.693" height="56.693"
                             viewBox="0 0 512 512">
@@ -94,18 +113,18 @@
                              0 256 0Zm-80.037 399.871V199.95h-66.464v199.921h66.464Zm239.62 0V285.225c0-61.409-32.787-89.976-76.509-89.976-35.255 0-51.047 19.389-59.889 33.007V199.95h-66.447c.881 18.757 0 199.921 0 199.921h66.446v-111.65c0-5.976.43-11.95 2.191-16.221 4.795-11.935 15.737-24.299 34.095-24.299 24.034 0 33.663 18.34 33.663 45.204v106.966h66.45ZM143.18 103.55c-22.74 0-37.597 14.95-37.597 34.545 0 19.182 14.405 34.544 36.717 34.544h.429c23.175 0 37.6-15.362 37.6-34.544-.43-19.595-14.424-34.545-37.149-34.545Z" />
                         </svg>
 
-                        <span class="linke">Linkedin</span>
+                        <span class="linkeone">Linkedin</span>
                     </a>
 
-                    <a class="linke" href="https://github.com/maicom-goncalves" target="_blank">
+                    <a class="linkeone" href="https://github.com/maicom-goncalves" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.693" height="56.693"
                             viewBox="0 0 512 512">
                             <path
                                 d="M256.6 507.8c-138.5-.5-249.3-114-248.1-253.1C9.6 118.1 119.9 4.6 260.2 6.3 397.3 7.9 507.1 121.1 505.5 260 504 396 394.7 507.7 256.6 507.8zm-35.4-130.3c-1.6-.3-2.3-.4-3.1-.5-19.1-2.7-37-8.4-53-19.8-17.1-12.2-27.6-28.6-31.9-48.7-4.4-20.5-2.7-41.2.5-61.7 2.2-14.1 7-27.4 18-37.5 1.6-1.5 1.5-2.7.7-4.7-6-16.6-5.3-33.3-.3-50 1-3.3 2.6-4.7 6.1-3.4 4.2 1.5 8.5 2.8 12.4 5.1 10.7 6.3 18.9 15 26.1 24.9 1.8 2.4 3 2.8 5.5 1.1 6.2-4.3 13.5-5.6 20.6-6.9 17.2-3.2 34.5-2.6 51.8-1.8 10.1.5 20.1 2.3 29.7 5.9 3 1.1 5.7 5 8.5 3.5 2.8-1.4 4.5-5.2 6.7-7.8 8.8-10.6 18.9-19.4 32.5-23.7 4.4-1.4 6.4-.7 7.9 4 5 16.3 5.7 32.4-.6 48.4-1 2.5-.8 4.3 1.3 6.2 8.3 7.7 13.1 17.6 15.6 28.5 4.3 18.6 5.4 37.6 4.2 56.6-1.2 18.2-7.1 34.8-19.3 48.8-16.4 18.8-37.8 28.1-61.9 32.2-2.8.5-5.7 1-8.7 1.5 7.1 11.1 10.5 22.6 10.6 35 .1 14.3 0 28.7 0 43v28c15.2-1.5 43.6-11.6 63.4-22.4 92.3-50.3 138.9-154.2 115.4-257.1C452.1 81.8 331 4.5 208.6 31 93 56.1 13 167.5 30.4 289.9c8.1 56.9 34.2 104.5 77.4 142.4 28.5 25 61.5 41.7 98.5 50.3 2.9.7 4.2.5 4.1-3-.2-9.8-.2-19.7 0-29.5 0-3.3-.6-4.3-4.2-3.6-6.5 1.3-13.2 2-19.9 1.6-21.2-1.1-38.4-9.5-50.5-27.5-4.1-6.1-6.4-13.2-10.3-19.3-6.9-10.7-13-22-24.5-28.9-1.5-.9-3.3-2.3-2.4-4.4.8-2 3-1.7 4.8-1.9 12.8-1 23.3 3.8 32 13 4.6 4.9 7.5 11 11.5 16.3 13.3 17.7 38.7 25.3 59.5 17.8 3-1.1 3.9-2.6 4.3-5.7 1.2-10.5 3.2-20.8 10.5-30z" />
                         </svg>
-                        <span class="linke">GitHub</span>
+                        <span class="linkeone">GitHub</span>
                     </a>
-                    <a href="https://bsky.app/profile/maicom-g-soares.bsky.social" class="linke" target="_blank">
+                    <a href="https://bsky.app/profile/maicom-g-soares.bsky.social" class="linkeone" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="56.693" height="56.693"
                             viewBox="0 0 272 272">
                             <path
@@ -114,7 +133,7 @@
                                 127 188.55c2.2 11.92 5.43 19.45 9 19.45s6.83-7.54 9-19.45a66 66 0 0 0 57.51 46.88l5.95.52a14 14 0 0 0 15.15-12.7l.55-6.18A65.55 65.55 0 0 0 198 158.8a64.8 64.8 0 0 0-8.72-5.51A103.82 103.82 0 0 0 262.89
                                  63L264 50.81A12.74 12.74 0 0 0 252.37 37ZM44 80a12 12 0 1 1 12-12 12 12 0 0 1-12 12Zm184 0a12 12 0 1 1 12-12 12 12 0 0 1-12 12Z" />
                         </svg>
-                        <span class="linke">BlueSky</span>
+                        <span class="linkeone">BlueSky</span>
                     </a>
                 </div>
             </div>

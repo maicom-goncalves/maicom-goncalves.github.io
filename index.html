@@ -11,7 +11,17 @@
 <body>
     <div class="topsite">
         <nav class="navegador">
-            <ul class="navbar">     
+            <div class="modo">
+                <label class="switch">
+                    <input class="darkmode" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="troca02">
+                <p class="diurno"><b> &nbsp Escuro</b></p>
+                <p class="noturno"><b> &nbsp Claro </b></p>
+            </div>
+            <ul class="navbar">
                 <li class="menu-top">
                     <a href="#sobre-mim" class="nav"><b>SOBRE MIM</b></a>
                 </li>
@@ -28,35 +38,19 @@
         </nav>
     </div>
     <div class="tudo">
-        <div class="modo">
+
+
+        <div class="banner">
+            <!--
+            <svg id="maicom">
+                 <div class="modo">
             <label class="switch">
                 <input class="darkmode" type="checkbox" />
                 <span class="slider round"></span>
             </label>
         </div>
-        <p class="diurno"><b> &nbsp Escuro</b></p>
+         <p class="diurno"><b> &nbsp Escuro</b></p>
         <p class="noturno"><b> &nbsp Claro </b></p>
-        <div class="banner">
-            <!--
-            <svg id="maicom">
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="5%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
-                        <stop offset="15%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
-                        <stop offset="35%" style="stop-color:rgb(81, 172, 211);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:rgb(64, 177, 226);stop-opacity:1" />
-                    </linearGradient>
-                     
-                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="5%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
-                        <stop offset="15%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
-                        <stop offset="35%" style="stop-color:rgb(56, 227, 216);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:rgb(49, 209, 198);stop-opacity:1" />
-                    </linearGradient> 
-                </defs>
-                <text x="50" y="50" font-size="60" id="texto">Maicom G. Soares</text>
-                <path id="traco" d="M100,20 L100,40 Q100,40 100,50 L530,50" stroke-width="2" fill="none" />
-                <path id="traco" d="M50,60 L99,60 Q70,40 100,60 L530,60" stroke-width="2" fill="none" />
             </svg> -->
         </div>
         <section id="sobre-mim">
@@ -479,24 +473,25 @@
             <div class="copia-email">
                 <p id="texto-a-copiar">gonm202@gmail.com</p>
                 <div class="copicone">
-                    <h3 >Email :gonm202@gmail.com </h3>
+                    <h3>Email :gonm202@gmail.com </h3>
                     <button class="copiar" onclick="copiarTexto()">
-                       <b>Copiar email</b> 
-                     </button>
+                        <b>Copiar email</b>
+                    </button>
                 </div>
                 <div class="copitwo">
-                   <h3>Copiado para área de transferência </h3> 
-                   <svg id="iconemail"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512">
-                    <path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 
+                    <h3>Copiado para área de transferência </h3>
+                    <svg id="iconemail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 
                                         173.2V400c0 26.5 21.49 48 48 48h416c26.51 0 48-21.49 48-48V173.2L303.2 335.7C289.1
                                          346.6 272.5
                                         352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 
                                         137.3 512 125 512
-                                        112c0-26.51-21.5-48-48-48H48C21.49 64 0 85.49 0 112c0 13 6.01 25.3 16.29 33.3z"/>
-                </svg>
+                                        112c0-26.51-21.5-48-48-48H48C21.49 64 0 85.49 0 112c0 13 6.01 25.3 16.29 33.3z" />
+                    </svg>
                 </div>
-                
-                
+
+
             </div>
 
 

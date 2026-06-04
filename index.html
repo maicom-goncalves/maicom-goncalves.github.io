@@ -66,15 +66,22 @@
                             <stop offset="5%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
                             <stop offset="15%" style="stop-color:rgb(137, 201, 228);stop-opacity:1" />
                             <stop offset="35%" style="stop-color:rgb(81, 172, 211);stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:rgb(73, 165, 204);stop-opacity:1" />
                             <stop offset="100%" style="stop-color:rgb(64, 177, 226);stop-opacity:1" />
                         </linearGradient>
-                         
+
                         <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="5%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
                             <stop offset="15%" style="stop-color:rgb(158, 238, 233);stop-opacity:1" />
                             <stop offset="35%" style="stop-color:rgb(56, 227, 216);stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:rgb(49, 209, 198);stop-opacity:1" />
                             <stop offset="100%" style="stop-color:rgb(49, 209, 198);stop-opacity:1" />
-                        </linearGradient> 
+                        </linearGradient>
+
+                        <filter id="brilhoSuave">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
                     </defs>
                     <text x="50" y="50" font-size="60" id="texto">Maicom G. Soares</text>
                     <path id="traco" d="M100,20 L100,40 Q100,40 100,50 L530,50" stroke-width="2" fill="none" />
@@ -82,19 +89,29 @@
                 </svg>
                 <br />
                 <br />
+
+
                 <p class="justificado">
-                    <b>Desenvolvedor Web</b> com mais afinidade em <b> Frontend</b>,
-                    já ajudei a desenvolver componentes para aplicações web e em projetos próprios ,desenvolvi
-                    totalmente algumas aplicações web além de <b>HTML ,CSS </b> e <b>JavaScript</b> gosto muito de
+                    Sou um <b>Desenvolvedor Web Frontend</b> apaixonado por dar vida a ideias na internet.
+                    Construí componentes robustos e desenvolvi aplicações completas, sempre buscando o equilíbrio
+                    perfeito entre funcionalidade e beleza.
+                    Tenho forte afinidade com as ferramentas modernas do mercado, como <b>HTML ,CSS </b> e
+                    <b>JavaScript</b> gosto muito de
                     utilizar a
                     biblioteca <b>React js</b>
                     e o framework <b>Vue js </b> .
                 </p>
                 <p class="justificado">
-                    Estudei tecnologia em sistemas para internet no Instituto Federal de Mato Grosso do Sul
-                    campus Aquidauana tenho afinidade em criar design de sites web e atender a responsividade
-                    de dispositivos moveis gosto de pensar nos detalhes nas cores para que o resultado seja agradável
-                    e harmonioso .
+                    Minha jornada começou no <b>Instituto Federal de Mato Grosso do Sul </b> , onde me Graduei em
+                    Sistemas para Internet e
+                    descobri meu talento para o design web. Acredito que a beleza está nos detalhes, por isso me
+                    dedico a
+                    criar layouts agradáveis, escolher as cores certas e garantir que a experiência seja perfeita em
+                    qualquer
+                    dispositivo. Levei essa paixão para a Macro Media Solutions, onde pude aplicar meus
+                    conhecimentos
+                    em projetos reais,
+                    atualizando funcionalidades e construindo componentes em JavaScript e React.js.
                 </p>
                 <br />
                 <div class="icones">
@@ -491,11 +508,7 @@
                     </svg>
                 </div>
 
-
             </div>
-
-
-
         </footer>
     </div>
     <script src="./portfolio.js"></script>

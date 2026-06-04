@@ -9,6 +9,9 @@
 var root = document.querySelector(':root');
 var btn = document.querySelector('.darkmode');
 
+
+
+
 btn.addEventListener('click', function () {
     root.classList.toggle('light');
     root.classList.toggle('dark');

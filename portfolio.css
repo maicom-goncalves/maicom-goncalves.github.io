@@ -204,14 +204,17 @@ input:checked+.slider:before {
 	to {
 		stroke-dashoffset: 0;
 	}
-	0%, 100% {
-        opacity: 0.4;
-        filter: url(#brilhoSuave) brightness(1);
-    }
-    50% {
-        opacity: 1;
-        filter: url(#brilhoSuave) brightness(1.4);
-    }
+
+	0%,
+	100% {
+		opacity: 0.4;
+		filter: url(#brilhoSuave) brightness(1);
+	}
+
+	50% {
+		opacity: 1;
+		filter: url(#brilhoSuave) brightness(1.4);
+	}
 }
 
 
